@@ -1,0 +1,41 @@
+{
+  "name": "browser-extension-firewall",
+  "version": "0.1.0",
+  "description": "The browser extension firewall allows web sites and applications to REQUIRE, ALLOW, or REJECT specific Chromium-based browser extensions. Extension rule violations can be logged, notify the user, ping a beacon, or prevent the page from loading. Please note that this identification technique does not work in Firefox and Safari.",
+  "main": "src/extension-fw.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExtensionFw/ExtensionFw.git"
+  },
+  "keywords": [
+    "ExtensionFw",
+    "chrome",
+    "extension",
+    "firewall",
+    "extensions",
+    "add-ons",
+    "detect",
+    "allow",
+    "deny",
+    "reject",
+    "require"
+  ],
+  "author": "Matt Simpson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExtensionFw/ExtensionFw/issues"
+  },
+  "homepage": "https://github.com/ExtensionFw/ExtensionFw#readme",
+  "dependencies": {
+    "ua-parser-js": "^1.0.37"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

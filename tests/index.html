@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Browser Extension Firewall</title>
+
+    <script src="../dist/extension-fw.min.js"></script>
+</head>
+<body>
+<h1>Test Browser Extension Firewall</h1>
+
+<script>
+    const extensions = [
+        {
+            type: 'Chromium',
+            extensions: [
+                {
+                    name: 'Homework Solver by College Tools',
+                    element: 'img',
+                    test: 'chrome-extension://iiikmhonbbmbdjfokdmmncdohjionkmf/images/snapshot-new.png',
+                    rule: 'REJECT', // REJECT, ALLOW, REQUIRE
+                    action: 'log', // log, alert, ping, return, exit
+                }
+            ],
+        }
+    ];
+
+    const extensionFw = new ExtensionFw(extensions);
+    // extensionFw.setPingUrl('http://dev.localhost/beacon');
+    extensionFw.scan();
+</script>
+</body>
+</html>
