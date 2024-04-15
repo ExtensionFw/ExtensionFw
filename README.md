@@ -1,4 +1,4 @@
-# ExtensionFW - a web browser extension firewall
+# ExtensionFw - a web browser extension firewall
 
 The ExtensionFw package allows web sites and applications to REQUIRE, ALLOW, or REJECT specific Chromium-based browser extensions. Extension rule violations can be logged, notify the user, ping a beacon, or prevent the page from loading. Please note that this identification technique does not work in Firefox and Safari.
 
@@ -36,4 +36,4 @@ extensionFw.scan();
 
 Further documentation is required, such as what and how to test. This is just the first file added to the repo.
 
-Check out the tests/index.html to see the full example.
+Check out the tests/index.html file to see a full example.
